@@ -3,14 +3,22 @@ public class array1 {
 
     public static void main(String[] args)
     {
-        int i;
-        int array[]={1,5,6,8,92,16,27,98,24,32};
+        int i,n;
+        
         Scanner sc = new Scanner(System.in);
-        System.out.println("ENter value : ");
-        int n = sc.nextInt();
-        for(i=0;i<=10;i++)
+        System.out.println("Enter size of array : ");
+        int size = sc.nextInt();
+        int arr[]=new int[size];
+        System.out.println("ENter values in array : ");
+        for(i=0;i<size;i++)
         {
-            if(array[i]==n)
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Enter element u wanna search : ");
+        n = sc.nextInt();
+        for(i=0;i<size;i++)
+        {
+            if(arr[i]==n)
             {
                 System.out.println("ELement Found at : "+i);
             }
